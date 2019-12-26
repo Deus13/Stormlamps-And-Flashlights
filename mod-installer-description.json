@@ -1,0 +1,25 @@
+﻿{
+	"name": "Stormlamps-And-Flashlights",
+	"description": "Makes overall changes to Stormlamps and Flashlights. Changes inceases fulecunsumption when on low condition and makes both items degrade with use. Everything custumiseable.",
+	"url": "",
+	"releases": [
+		{
+			"version": "1.0.0",
+			"url": "",
+			"changes": "updated to work with TLD V1.56",
+			"dependencies": [
+				{
+					"name": "ModSettings",
+					"version": "^v1.4"
+				}
+			],
+			"assets": [
+				{
+					"url": ""
+				}
+			]
+		}, {
+			"version": "1.0.0"
+		}
+	]
+}
