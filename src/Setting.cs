@@ -9,23 +9,23 @@ namespace StormlampsAndFlashlights
         [Section("Flashlight:")]
         [Name("Degrade from switching")]
         [Description("How much condition is lost when the flashlight is toggelt.")]
-        [Slider(0, 5)]
-        public float ConditionlossFlashSwitching = 0.5f;
+        [Slider(0, 2)]
+        public float ConditionlossFlashSwitching = 0.25f;
 
         [Name("Degrade from turned on low")]
         [Description("How much condition is lost per hour when the Flashlight is burning on low settings.")]
-        [Slider(0, 10)]
-        public float ConditionlossFlashLow = 1f;
+        [Slider(0, 5)]
+        public float ConditionlossFlashLow = 0.5f;
 
         [Name("degrade from turned on high")]
         [Description("How much condition is lost per hour when the Flashlight is burning on high settings.")]
-        [Slider(0, 100)]
-        public float ConditionlossFlashHigh = 10f;
+        [Slider(0, 10)]
+        public float ConditionlossFlashHigh = 5f;
 
         [Name("Degrade from emptying the Battery")]
         [Description("How much condition is lost when the flashlight is totlay discarged while on.")]
         [Slider(0, 100)]
-        public float ConditionlossFlashEmptying = 10f;
+        public float ConditionlossFlashEmptying = 5f;
 
         [Name("Discarge for perfect condition")]
         [Description("How much charge the flashlight uses to work, compared to unmoded, when in perfect condition")]
@@ -49,17 +49,17 @@ namespace StormlampsAndFlashlights
         [Section("Stromlantern:")]
         [Name("Degrade from switching")]
         [Description("How much condition is lost when the Stromlantern is toggelt.")]
-        [Slider(0, 5)]
-        public float ConditionlossLanternSwitching = 0.5f;
+        [Slider(0, 2)]
+        public float ConditionlossLanternSwitching = 0.25f;
 
         [Name("Degrade when on")]
         [Description("How much condition is lost per hour when the Stromlantern is burning.")]
-        [Slider(0, 10)]
-        public float ConditionlossLanternOn = 1f;
+        [Slider(0, 5)]
+        public float ConditionlossLanternOn = 0.5f;
 
         [Name("Fule consumtion for perfect condition")]
         [Description("How much fule the Stromlantern uses, compared to unmoded, when in perfect condition")]
-        [Slider(0, 10)]
+        [Slider(0, 5)]
         public float FuleRateLanternPerfect = 0.5f;
 
         [Name("Fule consumtion for bad condition")]
@@ -76,12 +76,12 @@ namespace StormlampsAndFlashlights
         [Name("Increaced conditionloss form holding in hand.")]
         [Description("Multiplies the conditionloss value from above with this value whenn the Stromlantern or Flashlight is on, wihle holding it")]
         [Slider(0, 10)]
-        public float ConditionlossHolding = 2.5f;
+        public float ConditionlossHolding = 2f;
 
         [Name("Increaced conditionloss form being outdoor.")]
         [Description("Multiplies the conditionloss value from above with this value whenn the Stromlantern or Flashlight is on, wihle outside")]
         [Slider(0, 10)]
-        public float ConditionlossOutside = 2.5f;
+        public float ConditionlossOutside = 2f;
 
         [Name("Increaced conditionloss form Bizzard.")]
         [Description("Multiplies the conditionloss value from above with this value whenn the Stromlantern or Flashlight is used outside during a blizard.")]
